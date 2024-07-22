@@ -34,5 +34,8 @@ def quicksave(file: str, data: str | bytes, type: QuickType) -> None:
         type (QuickloadType): What type to write
     """
 
+    if not os.path.exists(file):
+        raise FileNotFoundError(f"File {file} not found.")
+    
     with open(file, "w" if type == QuickType.TEXT else "wb") as f:
         f.write(data)

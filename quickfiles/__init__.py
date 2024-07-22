@@ -1,5 +1,5 @@
 import quickfiles.quickfiles as quickfiles
-from quickfiles.quickfiles import QuickType, ErrorTolerance, quickload
+from quickfiles.quickfiles import QuickType, quickload, quicksave
 
-__title__ = 'versions'
-__all__ = ['Version']
+__title__ = 'quickfiles'
+__all__ = ["QuickType", "quickload", "quicksave"]

@@ -22,10 +22,10 @@ classifiers = [
 addopts = "--cov --cov-report=lcov:lcov.info --cov-report=term"
 
 [tool.coverage.run]
-source = ["versions"]
+source = ["quickfiles"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["versions"]
+packages = ["quickfiles"]
 
 [project.urls]
 Homepage = "https://github.com/kaneryu/quickload"
